@@ -15,17 +15,20 @@ function Form() {
 
 
     return (
-        <div>
+        <div className = 'container'>
             <form onSubmit = {e => handleSubmit(e)}>
-                <label>
-                    Name: <input type = 'text' name = 'name' value = {teamMember.name} onChange = {e => handleChange(e)} />
-                </label>
-                <label>
-                    Email: <input type = 'text' name = 'email' value = {teamMember.email} onChange = {e => handleChange(e)} />
-                </label>
-                <label>
-                    Role: <input type = 'text' name = 'role' value = {teamMember.role} onChange = {e => handleChange(e)} />
-                </label>
+                <label className = 'name' >
+                    Name:
+                    <input type = 'text' name = 'name' value = {teamMember.name} onChange = {e => handleChange(e)} />
+                </label><br />
+                <label className = 'email' >
+                    Email:
+                    <input type = 'text' name = 'email' value = {teamMember.email} onChange = {e => handleChange(e)} />
+                </label><br />
+                <label className = 'role' >
+                    Role:
+                    <input type = 'text' name = 'role' value = {teamMember.role} onChange = {e => handleChange(e)} />
+                </label><br />
                 <button>Submit</button>
             </form>
         </div>

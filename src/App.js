@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Team Member List</h1>
+      <h1>Add a Team Member</h1>
       <Form />
     </div>
   );
