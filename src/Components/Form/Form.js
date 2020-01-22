@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './Form.css';
+import './Form.scss';
 
 function Form() {
     const [teamMember, setTeamMember] = useState({name: '', email: '', role: ''});
