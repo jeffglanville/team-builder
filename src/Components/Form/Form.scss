@@ -1,17 +1,31 @@
-label {
+form {
     display: flex;
-    justify-content: center;
-    color: blue;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 
     input {
-        margin-left: 5px;
-        display: flex;
-        justify-content: center;
-        height: 15px;
+        font-size: 1rem;
+        height: 30px;
         width: 100%;
     }
-
-    text{
-        font-size: 1rem;
+}
+button {
+    height: 5vh;
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: forestgreen;
+    color: white;
+    &:hover {
+        font-size: 1.2rem;
+        background-color: crimson;
+        color: yellow;
     }
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: blueviolet;
 }

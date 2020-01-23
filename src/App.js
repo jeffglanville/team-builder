@@ -9,7 +9,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Add a Team Member</h1>
       <Form />
       <Card />
     </div>
