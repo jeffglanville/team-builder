@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './Form.scss';
 
+
 function Form() {
     const [teamMember, setTeamMember] = useState({name: '', email: '', role: ''});
 
@@ -29,7 +30,7 @@ function Form() {
                     Role:
                     <input type = 'text' name = 'role' value = {teamMember.role} onChange = {e => handleChange(e)} />
                 </label><br />
-                <button>Submit</button>
+                <button type = 'submit'>Add New Member Information</button>
             </form>
         </div>
     )
