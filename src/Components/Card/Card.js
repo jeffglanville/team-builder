@@ -4,13 +4,13 @@ import './Card.scss';
 
 function Card() {
     return (
-        <div>
-            {team.map(function(idx) {
+        <div className = 'team-wrapper'>
+            {team.map((team, idx) => {
                 return (
-                    <div>
-                        <p key = {idx}>{team.name}</p>
-                        <p key = {idx}>{team.email}</p>
-                        <p key = {idx}>{team.role}</p>
+                    <div key = {idx} className = 'team-content'>
+                        <p>{team.Name}</p>
+                        <p>{team.email}</p>
+                        <p>{team.Role}</p>
                     </div>
                 )
             })}
