@@ -1,21 +1,26 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './Form.scss';
 
 
-function Form() {
-    const [teamMember, setTeamMember] = useState({name: '', email: '', role: ''});
 
+function Form(props) {
+    const {teamMember, setTeamMember} = props
     const handleChange = e => {
         setTeamMember({...teamMember, [e.target.name]: e.target.value});
     }
 
+    console.log(teamMember)
+
     const handleSubmit = e => {
         e.preventDefault();
-        setTeamMember({name: '', email: '', role: '', });
+        const member = {name: teamMember.name, email: teamMember.email, role: teamMember.role}
+        setTeamMember({...teamMember,members:[...teamMember.members, member]});
         console.log(teamMember, 'adding a new member');
     };
 
-
+    if (!teamMember){
+        return <h1>Loading...</h1>
+    }
     return (
         <div className = 'container'>
             <h1>Add a Team Member</h1>
