@@ -11,9 +11,8 @@ function Form() {
 
     const handleSubmit = e => {
         e.preventDefault();
-        // setTeamMember({name: '', email: '', role: '', });
-        const newTeamMember = {...teamMember, };
-        console.log(teamMember);
+        setTeamMember({name: '', email: '', role: '', });
+        console.log(teamMember, 'adding a new member');
     };
 
 
