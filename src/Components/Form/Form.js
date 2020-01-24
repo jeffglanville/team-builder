@@ -31,7 +31,6 @@ function Form() {
                 </label><br />
                 <button type = 'submit' onSubmit = {e => handleSubmit(e)}>Add New Member Information</button>
             </form>
-            <h2>Team Member:</h2>
         </div>
     )
 }
